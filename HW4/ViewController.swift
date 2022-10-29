@@ -18,7 +18,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupMeaning()
-        setupSliders()
+        setupRedSlider()
+        setupBlueSlider()
+        setupGreenSlider()
         slidersAction()
     }
     
@@ -49,26 +51,24 @@ class ViewController: UIViewController {
         blueMeaning.text = "0.00"
     }
     
-    private func setupSliders() {
-        func setupRedSlider() {
-            redSlider.value = 1
-            redSlider.minimumTrackTintColor = .red
-            redSlider.minimumValue = 0
-            redSlider.maximumValue = 1
-        }
-        
-        func setupGreenSlider() {
-            greenSlider.value = 1
-            greenSlider.minimumTrackTintColor = .green
-            greenSlider.minimumValue = 0
-            redSlider.maximumValue = 1
-        }
-        
-        func setupBlueSlider() {
-            blueSlider.value = 1
-            blueSlider.minimumTrackTintColor = .blue
-            blueSlider.minimumValue = 0
-            blueSlider.maximumValue = 1
-        }
+    private func setupRedSlider() {
+        redSlider.value = 1
+        redSlider.minimumTrackTintColor = .red
+        redSlider.minimumValue = 0
+        redSlider.maximumValue = 1
+    }
+    
+    private func setupGreenSlider() {
+        greenSlider.value = 1
+        greenSlider.minimumTrackTintColor = .green
+        greenSlider.minimumValue = 0
+        redSlider.maximumValue = 1
+    }
+    
+    private func setupBlueSlider() {
+        blueSlider.value = 1
+        blueSlider.minimumTrackTintColor = .blue
+        blueSlider.minimumValue = 0
+        blueSlider.maximumValue = 1
     }
 }
